@@ -4,7 +4,16 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+
+    <!-- Style Import -->
+    <link rel="stylesheet" href="style/style.css" />
+    <link rel="stylesheet" href="style/navbar.css" />
+    <link rel="stylesheet" href="style/navbar-mobile.css" />
+    <link rel="stylesheet" href="style/text.css" />
+    <link rel="stylesheet" href="style/button.css" />
+    <link rel="stylesheet" href="style/footer.css" />
+    <link rel="stylesheet" href="style/style-mobile.css" />
+
     <title>Starbucks</title>
   </head>
   <body>
@@ -46,8 +55,37 @@
             <button class="btn btn-primary">Join Now</button>
           </li>
         </ul>
+
+        <!-- Mobile Nav Bar -->
+        <button type="button" class="hamburger" id="menu-btn">
+          <span class="hamburger-top"></span>
+          <span class="hamburger-middle"></span>
+          <span class="hamburger-bottom"></span>
+        </button>
       </div>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-menu hidden" id="menu">
+      <ul>
+        <li><a href="#">Menu</a></li>
+        <li><a href="#">Rewards</a></li>
+        <li><a href="#">Gift Cards</a></li>
+      </ul>
+      <div class="mobile-menu-bottom">
+        <button class="btn btn-dark-outline">Sign In</button>
+        <button class="btn btn-primary">Join Now</button>
+        <div>
+          <a href="#">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQwa6YsOdyNZMgr9GNaIZWNDHiPYZk9_RZwKQ&usqp=CAU"
+              alt=""
+            />
+            <span>Find a Store</span>
+          </a>
+        </div>
+      </div>
+    </div>
 
     <!-- Body -->
 
@@ -105,15 +143,15 @@
     <footer class="footer">
       <div class="footer-container">
         <div class="social">
-          <a href=""
+          <a href="https://instagram.com" target="_blank"
             ><img
               src="https://1000logos.net/wp-content/uploads/2017/02/Instagram-Logo.png"
               alt="Instagram"
           /></a>
-          <a href=""
+          <a href="https://facebook.com" target="_blank"
             ><img
               src="https://1000logos.net/wp-content/uploads/2021/04/Facebook-logo.png"
-              alt="Instagram"
+              alt="Facebook"
           /></a>
         </div>
         <p class="text-center">
@@ -127,5 +165,6 @@
     </footer>
 
     <script src="script.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
